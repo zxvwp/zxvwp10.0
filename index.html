@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZXVWP Text Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background:#111; color:#0f0; font-family:monospace; margin:0; padding:1rem; }
+    #terminal { height:90vh; overflow-y:auto; white-space:pre-wrap; }
+    #commandInput {
+      width:100%; background:#000; color:#0f0; border:none;
+      font-family:monospace; font-size:1rem; padding:0.5rem;
+    }
+    #commandInput:focus { outline:none; }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <input id="commandInput" autocomplete="off" placeholder="Type command...">
+  <!-- Dexie.js CDN -->
+  <script src="https://unpkg.com/dexie@3/dist/dexie.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
